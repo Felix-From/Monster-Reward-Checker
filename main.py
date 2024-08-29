@@ -12,7 +12,7 @@ while True:
     soup = bs(response.text, 'html.parser')
     # Parse HTML content.
     # Select first "a" box with the href "/reward/cargo-kuhler"
-    reward = soup.find('a', href="/reward/lanyard")
+    reward = soup.find('a', href="/reward/cargo-kuhler")
     # Check if reward is available
     if reward != None:
         print("Kuhler found...")
